@@ -111,11 +111,19 @@ class Template extends React.Component {
 
         <div
           style={{ direction: 'rtl', textAlign: 'center' }}
-          className="container-fluid"
+          className="container-fluid px-3"
         >
+          <h1 className="mt-4" style={{ color: 'gold', letterSpacing: '15px' }}>
+            LionseTie
+            <br />
+            <small style={{ color: 'white', fontSize: '0.8rem' }}>
+              real estate <span>Solutions</span>
+            </small>
+          </h1>
+
           <div className="row mt-5">
             <div className="col-xl-6 col-sm-12">
-              <h1 style={{ color: 'gold' }}>עדיין חולמים על בית מול הים ?</h1>
+              <h1 style={{ color: 'gold' }}>עדיין חולמים על בית מול הים?</h1>
               <div className="col-12 "></div>
               <div className="col-12 mt-5">
                 <h4 style={{ lineHeight: '10vh' }}>
@@ -188,10 +196,42 @@ class Template extends React.Component {
                   </ul>
                 </div>
                 <div
-                  className="bg-light shadow-sm mx-auto"
+                  className="shadow-sm mx-auto"
                   style={{
                     width: '80%',
-                    height: '300px',
+
+                    borderRadius: '21px 21px 0 0',
+                  }}
+                >
+                  <Carousel
+                    showThumbs={false}
+                    showIndicators={false}
+                    autoPlay
+                    showArrows={false}
+                    showStatus={false}
+                  >
+                    <div>
+                      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+                      <p className="legend">Legend 1</p>
+                    </div>
+                  </Carousel>
+                </div>
+              </div>
+              <div className="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                <div className="my-3 py-3">
+                  <h2 className="display-5">דירת סטודיו בבולגריה</h2>
+                  <p className="lead"> Anna Marina Sveti Vlas, Bulgaria</p>
+                  <ul style={{ listStyle: 'none' }}>
+                    <li> מחיר: 27000 €</li>
+                    <li> גודל: 32 מ"ר</li>
+                    <li>כולל: מטבחון, שירותים, אמבטיה, ומפרסת שמש</li>
+                    <li>השכרה לילה לפי בוקינג : 15 € </li>
+                  </ul>
+                </div>
+                <div
+                  className="shadow-sm mx-auto"
+                  style={{
+                    width: '80%',
                     borderRadius: '21px 21px 0 0',
                   }}
                 >
@@ -207,20 +247,6 @@ class Template extends React.Component {
                     </div>
                   </Carousel>
                 </div>
-              </div>
-              <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div className="my-3 p-3">
-                  <h2 className="display-5">Another headline</h2>
-                  <p className="lead">And an even wittier subheading.</p>
-                </div>
-                <div
-                  className="bg-dark shadow-sm mx-auto"
-                  style={{
-                    width: '80%',
-                    height: '300px',
-                    borderRadius: '21px 21px 0 0',
-                  }}
-                ></div>
               </div>
             </div>
           </div>
