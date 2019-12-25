@@ -90,7 +90,6 @@ class Template extends React.Component {
 
     const videoOptions = {
       playerVars: {
-        // https://developers.google.com/youtube/player_parameters
         autoplay: 1,
         controls: 0,
         rel: 0,
@@ -111,9 +110,9 @@ class Template extends React.Component {
 
         <div
           style={{ direction: 'rtl', textAlign: 'center' }}
-          className="container-fluid px-3"
+          className="container-fluid px-3 bg-dark"
         >
-          <h1 className="mt-4" style={{ color: 'gold', letterSpacing: '15px' }}>
+          <h1 style={{ color: 'gold', letterSpacing: '15px' }}>
             LionseTie
             <br />
             <small style={{ color: 'white', fontSize: '0.8rem' }}>
@@ -249,16 +248,6 @@ class Template extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="video-background">
-          <div className="video-foreground">
-            <YouTube
-              videoId="jEnd8JIMii4"
-              opts={videoOptions}
-              className="video-iframe"
-            />
           </div>
         </div>
       </div>
