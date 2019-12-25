@@ -115,7 +115,7 @@ class Template extends React.Component {
           className="container-fluid  p-5"
         >
           <h1 className="py-5" style={{ color: 'gold', letterSpacing: '15px' }}>
-            LionseTie
+            LionsTie
             <br />
             <strong style={{ color: 'white', fontSize: '0.8rem' }}>
               real-estate <strong style={{ color: 'gold' }}>Solutions</strong>
@@ -138,7 +138,9 @@ class Template extends React.Component {
                   <br />
                   החל מ₪40.000 והדירה שלך
                 </h4>
-                <h5 style={{ color: 'red', fontWeight: '700' }}>
+                <h5
+                  style={{ color: 'red', fontWeight: '700', marginTop: '4rem' }}
+                >
                   אירופה מתחממת
                 </h5>
                 <p className="mb-5" style={{ color: 'silver' }}>
