@@ -88,15 +88,6 @@ class Template extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
 
-    const videoOptions = {
-      playerVars: {
-        autoplay: 1,
-        controls: 0,
-        rel: 0,
-        showinfo: 0,
-      },
-    }
-
     return (
       <div
         className={`body ${this.state.loading} ${
@@ -109,16 +100,19 @@ class Template extends React.Component {
         </Helmet>
 
         <div
-          style={{ direction: 'rtl', textAlign: 'center' }}
-          className="container-fluid px-3 bg-dark"
+          style={{ direction: 'rtl', textAlign: 'center', background: 'black' }}
+          className="container-fluid px-3 "
         >
           <h1 style={{ color: 'gold', letterSpacing: '15px' }}>
             LionseTie
             <br />
-            <small style={{ color: 'white', fontSize: '0.8rem' }}>
-              real estate <span>Solutions</span>
-            </small>
+            <strong style={{ color: 'white', fontSize: '0.8rem' }}>
+              real estate <strong>Solutions</strong>
+            </strong>
           </h1>
+          <div
+            style={{ background: 'white', height: '5px', width: '100%' }}
+          ></div>
 
           <div className="row mt-5">
             <div className="col-xl-6 col-sm-12">
@@ -180,76 +174,7 @@ class Template extends React.Component {
         <div
           style={{ direction: 'rtl', textAlign: 'center' }}
           className="container"
-        >
-          <div className="row mt-4">
-            <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-              <div className="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div className="my-3 py-3">
-                  <h2 className="display-5">דירת סטודיו בבולגריה</h2>
-                  <p className="lead"> Anna Marina Sveti Vlas, Bulgaria</p>
-                  <ul style={{ listStyle: 'none' }}>
-                    <li> מחיר: 27000 €</li>
-                    <li> גודל: 32 מ"ר</li>
-                    <li>כולל: מטבחון, שירותים, אמבטיה, ומפרסת שמש</li>
-                    <li>השכרה לילה לפי בוקינג : 15 € </li>
-                  </ul>
-                </div>
-                <div
-                  className="shadow-sm mx-auto"
-                  style={{
-                    width: '80%',
-
-                    borderRadius: '21px 21px 0 0',
-                  }}
-                >
-                  <Carousel
-                    showThumbs={false}
-                    showIndicators={false}
-                    autoPlay
-                    showArrows={false}
-                    showStatus={false}
-                  >
-                    <div>
-                      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
-                      <p className="legend">Legend 1</p>
-                    </div>
-                  </Carousel>
-                </div>
-              </div>
-              <div className="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div className="my-3 py-3">
-                  <h2 className="display-5">דירת סטודיו בבולגריה</h2>
-                  <p className="lead"> Anna Marina Sveti Vlas, Bulgaria</p>
-                  <ul style={{ listStyle: 'none' }}>
-                    <li> מחיר: 27000 €</li>
-                    <li> גודל: 32 מ"ר</li>
-                    <li>כולל: מטבחון, שירותים, אמבטיה, ומפרסת שמש</li>
-                    <li>השכרה לילה לפי בוקינג : 15 € </li>
-                  </ul>
-                </div>
-                <div
-                  className="shadow-sm mx-auto"
-                  style={{
-                    width: '80%',
-                    borderRadius: '21px 21px 0 0',
-                  }}
-                >
-                  <Carousel
-                    showThumbs={false}
-                    showIndicators={false}
-                    autoPlay
-                    showArrows={false}
-                  >
-                    <div>
-                      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
-                      <p className="legend">Legend 1</p>
-                    </div>
-                  </Carousel>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ></div>
       </div>
     )
   }
