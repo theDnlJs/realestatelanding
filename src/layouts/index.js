@@ -112,7 +112,7 @@ class Template extends React.Component {
             textAlign: 'center',
             background: 'black',
           }}
-          className="container-fluid  "
+          className="container-fluid  p-5"
         >
           <h1 className="py-5" style={{ color: 'gold', letterSpacing: '15px' }}>
             LionseTie
