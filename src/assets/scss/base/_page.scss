@@ -20,7 +20,7 @@
 
 	body {
 		background: _palette(bg);
-
+		
 		// Prevents animation/transition "flicker" on page load.
 		// Automatically added/removed by js/main.js.
 			&.is-loading,
@@ -48,7 +48,6 @@
 	}
 
 .feature {
-	direction: rtl;
     float: left;
     width: 33.3333%;
 	margin-bottom: 6rem;
