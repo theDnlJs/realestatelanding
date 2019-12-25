@@ -11,6 +11,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
+import icon1 from '../images/payment.png'
+import icon2 from '../images/sun-umbrella.png'
+import icon3 from '../images/opportunity.png'
+import icon4 from '../images/marketing.png'
+import icon5 from '../images/18-.png'
+import icon6 from '../images/house.png'
+
 class Template extends React.Component {
   constructor(props) {
     super(props)
@@ -105,7 +112,7 @@ class Template extends React.Component {
             textAlign: 'center',
             background: 'black',
           }}
-          className="container-fluid px-3 "
+          className="container-fluid  "
         >
           <h1 className="py-5" style={{ color: 'gold', letterSpacing: '15px' }}>
             LionseTie
@@ -137,14 +144,6 @@ class Template extends React.Component {
                 <p className="mb-5" style={{ color: 'silver' }}>
                   --מלאי הדירות בבתי מלון מוגבל ולכן מומלץ להזדרז--
                 </p>
-                <div
-                  className="my-5"
-                  style={{
-                    background: 'gold',
-                    height: '5px',
-                    width: '100%',
-                  }}
-                ></div>
               </div>
             </div>
             <div
@@ -187,10 +186,50 @@ class Template extends React.Component {
             </div>
           </div>
         </div>
-        <div
-          style={{ direction: 'rtl', textAlign: 'center' }}
-          className="container"
-        ></div>
+
+        <div style={{ margin: '0 auto' }}>
+          <section className="features px-5">
+            <div className="feature">
+              <img src={icon4} className="feature__icon" />
+              <h4 className="heading-4 heading-4--dark">
+                ליווי מקצועי ואמין בישראל ובחו"ל{' '}
+              </h4>
+            </div>
+
+            <div className="feature">
+              <img src={icon3} className="feature__icon" />
+
+              <h4 className="heading-4 heading-4--dark">
+                הזדמנויות בכל רחבי אירופה
+              </h4>
+            </div>
+            <div className="feature">
+              <img src={icon2} className="feature__icon" />
+
+              <h4 className="heading-4 heading-4--dark">
+                ייעדי נופש נבחרים באירופה
+              </h4>
+            </div>
+
+            <div className="feature">
+              <img src={icon6} className="feature__icon" />
+
+              <h4 className="heading-4 heading-4--dark">מלאי הדירות מוגבל </h4>
+            </div>
+
+            <div className="feature">
+              <img src={icon1} className="feature__icon" />
+
+              <h4 className="heading-4 heading-4--dark">תנאי תשלום נוחים</h4>
+            </div>
+
+            <div className="feature">
+              <img src={icon5} className="feature__icon" />
+
+              <h4 className="heading-4 heading-4--dark">מעל גיל 18</h4>
+            </div>
+          </section>
+        </div>
       </div>
     )
   }
