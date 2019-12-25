@@ -111,7 +111,8 @@ class Template extends React.Component {
             </strong>
           </h1>
           <div
-            style={{ background: 'white', height: '5px', width: '100%' }}
+            className="my-5"
+            style={{ background: 'gold', height: '5px', width: '100%' }}
           ></div>
 
           <div className="row mt-5">
@@ -130,6 +131,14 @@ class Template extends React.Component {
                   --מלאי הדירות בבתי מלון מוגבל ולכן מומלץ להזדרז--
                 </p>
               </div>
+              <div
+                className="my-5"
+                style={{
+                  background: 'gold',
+                  height: '5px',
+                  width: '100%',
+                }}
+              ></div>
             </div>
             <div
               style={{ backgroundColor: '#bbc11e4a' }}
