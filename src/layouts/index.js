@@ -189,13 +189,18 @@ class Template extends React.Component {
           </div>
         </div>
         <div
-          className="container-fluid d-flex justify-content-center bg-dark mt-5 p-5"
-          style={{ margin: '0 auto' }}
+          className="container-fluid d-flex justify-content-center p-5"
+          style={{ margin: '0 auto', background: 'black', color: 'white' }}
         >
           <div className="row">
             <div
-              className="card col-lg-4 col-md-6 mx-2"
-              style={{ width: '18rem', margin: '0 auto' }}
+              className="card col-lg-4 col-md-6 py-5 px-1  mt-3"
+              style={{
+                background: 'rgba(19, 19, 18, 0)',
+                width: '80%',
+                margin: '0 auto',
+                border: 'none',
+              }}
             >
               <img
                 style={{ width: '45px', margin: '0 auto' }}
@@ -211,8 +216,13 @@ class Template extends React.Component {
               </div>
             </div>
             <div
-              className="card col-lg-4 col-md-6 "
-              style={{ width: '18rem', margin: '0 auto' }}
+              className="card col-lg-4 col-md-6 py-5  mt-3"
+              style={{
+                background: 'rgba(19, 19, 18, 0)',
+                width: '18rem',
+                margin: '0 auto',
+                border: 'none',
+              }}
             >
               <img
                 style={{ width: '45px', margin: '0 auto' }}
@@ -226,10 +236,15 @@ class Template extends React.Component {
                   the bulk of the card's content.
                 </p>
               </div>
-            </div>
+            </div>{' '}
             <div
-              className="card col-lg-4 col-md-6 "
-              style={{ width: '18rem', margin: '0 auto' }}
+              className="card col-lg-4 col-md-6 py-5  mt-3"
+              style={{
+                background: 'rgba(19, 19, 18, 0)',
+                width: '18rem',
+                margin: '0 auto',
+                border: 'none',
+              }}
             >
               <img
                 style={{ width: '45px', margin: '0 auto' }}
@@ -243,10 +258,15 @@ class Template extends React.Component {
                   the bulk of the card's content.
                 </p>
               </div>
-            </div>
+            </div>{' '}
             <div
-              className="card col-lg-4 col-md-6 "
-              style={{ width: '18rem', margin: '0 auto' }}
+              className="card col-lg-4 col-md-6 py-5  mt-3"
+              style={{
+                background: 'rgba(19, 19, 18, 0)',
+                width: '18rem',
+                margin: '0 auto',
+                border: 'none',
+              }}
             >
               <img
                 style={{ width: '45px', margin: '0 auto' }}
@@ -260,10 +280,15 @@ class Template extends React.Component {
                   the bulk of the card's content.
                 </p>
               </div>
-            </div>
+            </div>{' '}
             <div
-              className="card col-lg-4 col-md-6 "
-              style={{ width: '18rem', margin: '0 auto' }}
+              className="card col-lg-4 col-md-6 py-5  mt-3"
+              style={{
+                background: 'rgba(19, 19, 18, 0)',
+                width: '18rem',
+                margin: '0 auto',
+                border: 'none',
+              }}
             >
               <img
                 style={{ width: '45px', margin: '0 auto' }}
@@ -277,13 +302,18 @@ class Template extends React.Component {
                   the bulk of the card's content.
                 </p>
               </div>
-            </div>
+            </div>{' '}
             <div
-              className="card col-lg-4 col-md-6"
-              style={{ width: '18rem', margin: '0 auto', margin: '0 auto' }}
+              className="card col-lg-4 col-md-6 py-5  mt-3"
+              style={{
+                background: 'rgba(19, 19, 18, 0)',
+                width: '18rem',
+                margin: '0 auto',
+                border: 'none',
+              }}
             >
               <img
-                style={{ width: '45px', margin: '0 auto', margin: '0 auto' }}
+                style={{ width: '45px', margin: '0 auto' }}
                 className="card-img-top"
                 src={icon1}
                 alt="Card image cap"
