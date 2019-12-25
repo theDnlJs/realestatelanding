@@ -188,50 +188,148 @@ class Template extends React.Component {
             </div>
           </div>
         </div>
-
-        <div style={{ margin: '0 auto' }}>
-          <section className="features px-5">
-            <div className="feature">
-              <img src={icon4} className="feature__icon" />
-              <h4 className="heading-4 heading-4--dark">
-                ליווי מקצועי ואמין בישראל ובחו"ל{' '}
-              </h4>
+        <div
+          className="container-fluid d-flex justify-content-center bg-dark mt-5 p-5"
+          style={{ margin: '0 auto' }}
+        >
+          <div className="row">
+            <div
+              className="card col-lg-4 col-md-6 mx-2"
+              style={{ width: '18rem', margin: '0 auto' }}
+            >
+              <img
+                style={{ width: '45px', margin: '0 auto' }}
+                className="card-img-top"
+                src={icon1}
+                alt="Card image cap"
+              />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-
-            <div className="feature">
-              <img src={icon3} className="feature__icon" />
-
-              <h4 className="heading-4 heading-4--dark">
-                הזדמנויות בכל רחבי אירופה
-              </h4>
+            <div
+              className="card col-lg-4 col-md-6 "
+              style={{ width: '18rem', margin: '0 auto' }}
+            >
+              <img
+                style={{ width: '45px', margin: '0 auto' }}
+                className="card-img-top"
+                src={icon1}
+                alt="Card image cap"
+              />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-            <div className="feature">
-              <img src={icon2} className="feature__icon" />
-
-              <h4 className="heading-4 heading-4--dark">
-                ייעדי נופש נבחרים באירופה
-              </h4>
+            <div
+              className="card col-lg-4 col-md-6 "
+              style={{ width: '18rem', margin: '0 auto' }}
+            >
+              <img
+                style={{ width: '45px', margin: '0 auto' }}
+                className="card-img-top"
+                src={icon1}
+                alt="Card image cap"
+              />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-
-            <div className="feature">
-              <img src={icon6} className="feature__icon" />
-
-              <h4 className="heading-4 heading-4--dark">מלאי הדירות מוגבל </h4>
+            <div
+              className="card col-lg-4 col-md-6 "
+              style={{ width: '18rem', margin: '0 auto' }}
+            >
+              <img
+                style={{ width: '45px', margin: '0 auto' }}
+                className="card-img-top"
+                src={icon1}
+                alt="Card image cap"
+              />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-
-            <div className="feature">
-              <img src={icon1} className="feature__icon" />
-
-              <h4 className="heading-4 heading-4--dark">תנאי תשלום נוחים</h4>
+            <div
+              className="card col-lg-4 col-md-6 "
+              style={{ width: '18rem', margin: '0 auto' }}
+            >
+              <img
+                style={{ width: '45px', margin: '0 auto' }}
+                className="card-img-top"
+                src={icon1}
+                alt="Card image cap"
+              />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-
-            <div className="feature">
-              <img src={icon5} className="feature__icon" />
-
-              <h4 className="heading-4 heading-4--dark">מעל גיל 18</h4>
+            <div
+              className="card col-lg-4 col-md-6"
+              style={{ width: '18rem', margin: '0 auto', margin: '0 auto' }}
+            >
+              <img
+                style={{ width: '45px', margin: '0 auto', margin: '0 auto' }}
+                className="card-img-top"
+                src={icon1}
+                alt="Card image cap"
+              />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
+
+        {/* <div className="bg-dark" style={{ margin: '0 auto' }}>
+          <div className="d-flex">
+            <img style={{ width: '45px', margin: '0 auto' }} src={icon4} />
+            <h4 className="heading-4 heading-4--dark ">
+              ליווי מקצועי ואמין בישראל ובחו"ל{' '}
+            </h4>
+          </div>
+
+          <img src={icon3} className="feature__icon" />
+
+          <h4 className="heading-4 heading-4--dark">
+            הזדמנויות בכל רחבי אירופה
+          </h4>
+
+          <img src={icon2} className="feature__icon" />
+
+          <h4 className="heading-4 heading-4--dark">
+            ייעדי נופש נבחרים באירופה
+          </h4>
+
+          <img src={icon6} className="feature__icon" />
+
+          <h4 className="heading-4 heading-4--dark">מלאי הדירות מוגבל </h4>
+
+          <img src={icon1} className="feature__icon" />
+
+          <h4 className="heading-4 heading-4--dark">תנאי תשלום נוחים</h4>
+
+          <img src={icon5} className="feature__icon" />
+
+          <h4 className="heading-4 heading-4--dark">מעל גיל 18</h4>
+        </div> */}
       </div>
     )
   }
