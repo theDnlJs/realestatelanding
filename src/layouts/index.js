@@ -258,8 +258,6 @@ class Template extends React.Component {
               videoId="jEnd8JIMii4"
               opts={videoOptions}
               className="video-iframe"
-              onReady={this._onReady}
-              onEnd={this._onEnd}
             />
           </div>
         </div>
