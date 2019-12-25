@@ -100,18 +100,22 @@ class Template extends React.Component {
         </Helmet>
 
         <div
-          style={{ direction: 'rtl', textAlign: 'center', background: 'black' }}
+          style={{
+            direction: 'rtl',
+            textAlign: 'center',
+            background: 'black',
+          }}
           className="container-fluid px-3 "
         >
-          <h1 style={{ color: 'gold', letterSpacing: '15px' }}>
+          <h1 className="py-5" style={{ color: 'gold', letterSpacing: '15px' }}>
             LionseTie
             <br />
             <strong style={{ color: 'white', fontSize: '0.8rem' }}>
-              real estate <strong>Solutions</strong>
+              real-estate <strong style={{ color: 'gold' }}>Solutions</strong>
             </strong>
           </h1>
           <div
-            className="my-5"
+            className="my-1"
             style={{ background: 'gold', height: '5px', width: '100%' }}
           ></div>
 
@@ -127,18 +131,21 @@ class Template extends React.Component {
                   <br />
                   החל מ₪40.000 והדירה שלך
                 </h4>
+                <h5 style={{ color: 'red', fontWeight: '700' }}>
+                  אירופה מתחממת
+                </h5>
                 <p className="mb-5" style={{ color: 'silver' }}>
                   --מלאי הדירות בבתי מלון מוגבל ולכן מומלץ להזדרז--
                 </p>
+                <div
+                  className="my-5"
+                  style={{
+                    background: 'gold',
+                    height: '5px',
+                    width: '100%',
+                  }}
+                ></div>
               </div>
-              <div
-                className="my-5"
-                style={{
-                  background: 'gold',
-                  height: '5px',
-                  width: '100%',
-                }}
-              ></div>
             </div>
             <div
               style={{ backgroundColor: '#bbc11e4a' }}
