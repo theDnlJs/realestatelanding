@@ -1,15 +1,8 @@
 import React from 'react'
 import '../assets/scss/main.scss'
 import Helmet from 'react-helmet'
-import YouTube from 'react-youtube'
-
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Flash from 'react-reveal/Flash'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-import { Carousel } from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import icon1 from '../images/payment.png'
 import icon2 from '../images/sun-umbrella.png'
@@ -17,6 +10,11 @@ import icon3 from '../images/opportunity.png'
 import icon4 from '../images/marketing.png'
 import icon5 from '../images/18-.png'
 import icon6 from '../images/house.png'
+
+import lion from '../images/lion.png'
+import baby from '../images/baby.png'
+
+import bg1 from '../images/bg1.png'
 
 class Template extends React.Component {
   constructor(props) {
@@ -114,13 +112,15 @@ class Template extends React.Component {
           }}
           className="container-fluid  p-5"
         >
-          <h1 className="py-5" style={{ color: 'gold', letterSpacing: '15px' }}>
+          <h1 style={{ color: 'gold', fontWeight: '700' }}>
+            <img style={{ width: '4rem' }} src={lion} alt="lion" />
             LionsTie
             <br />
             <strong style={{ color: 'white', fontSize: '0.8rem' }}>
               real-estate <strong style={{ color: 'gold' }}>Solutions</strong>
             </strong>
           </h1>
+
           <div
             className="my-1"
             style={{ background: 'gold', height: '5px', width: '100%' }}
@@ -129,14 +129,20 @@ class Template extends React.Component {
           <div className="row mt-5">
             <div className="col-xl-6 col-sm-12">
               <h1 style={{ color: 'gold' }}>עדיין חולמים על בית מול הים?</h1>
-              <div className="col-12 "></div>
-              <div className="col-12 mt-5">
-                <h4 style={{ lineHeight: '10vh' }}>
-                  דירה 35 מ"ר בבעלות פרטית
-                  <br />
-                  בטאבו בבית מלון
-                  <br />
-                  החל מ₪40.000 והדירה שלך
+              <img
+                style={{
+                  width: '300px',
+                  position: 'absolute',
+                  opacity: '19%',
+                  top: '-20px',
+                }}
+                src={baby}
+                alt="baby"
+              />
+              <div className="col-xl-12 col-md-12 mt-5">
+                <h4>
+                  דירה 35 מ"ר בבעלות פרטית בטאבו בבית מלון החל{' '}
+                  <strong style={{ color: 'gold' }}>מ₪40.000</strong> והדירה שלך
                 </h4>
                 <h5
                   style={{ color: 'red', fontWeight: '700', marginTop: '4rem' }}
@@ -190,7 +196,12 @@ class Template extends React.Component {
         </div>
         <div
           className="container-fluid d-flex justify-content-center p-5"
-          style={{ margin: '0 auto', background: 'black', color: 'white' }}
+          style={{
+            margin: '0 auto',
+            background: 'gold',
+            color: 'black',
+            textAlign: 'center',
+          }}
         >
           <div className="row">
             <div
@@ -205,14 +216,13 @@ class Template extends React.Component {
               <img
                 style={{ width: '45px', margin: '0 auto' }}
                 className="card-img-top"
-                src={icon1}
+                src={icon4}
                 alt="Card image cap"
               />
               <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h4 style={{ color: 'black' }} className="card-text">
+                  ליווי מקצועי ואמין בישראל ובחו"ל
+                </h4>
               </div>
             </div>
             <div
@@ -231,10 +241,9 @@ class Template extends React.Component {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h4 style={{ color: 'black' }} className="card-text">
+                  הזדמנויות בכל רחבי אירופה{' '}
+                </h4>
               </div>
             </div>{' '}
             <div
