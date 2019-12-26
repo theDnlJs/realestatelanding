@@ -128,43 +128,54 @@ class Template extends React.Component {
 
           <div className="row mt-5">
             <div className="col-xl-6 col-sm-12">
-              <h1 style={{ color: 'gold' }}>עדיין חולמים על בית מול הים?</h1>
-              <img
+              <h1 className="mb-5" style={{ color: 'gold' }}>
+                עדיין חולמים על בית מול הים?
+                <img
+                  style={{
+                    width: '150px',
+                    position: 'sticky',
+                    opacity: '19%',
+                    top: '30px',
+                    left: '5vh',
+                  }}
+                  src={baby}
+                  alt="baby"
+                />
+              </h1>
+              <Flash>
+                <h3 style={{ fontSize: '4rem' }}>תתעוררו</h3>
+              </Flash>
+              <h5
                 style={{
-                  width: '300px',
-                  position: 'absolute',
-                  opacity: '19%',
-                  top: '-20px',
+                  color: 'red',
+                  fontWeight: '700',
+                  marginTop: '4rem',
+                  fontSize: '2rem',
                 }}
-                src={baby}
-                alt="baby"
-              />
+              >
+                אירופה מתחממת
+              </h5>
+              <p className="mb-5" style={{ color: 'silver' }}>
+                --מלאי הדירות בבתי מלון מוגבל ולכן מומלץ להזדרז--
+              </p>
               <div className="col-xl-12 col-md-12 mt-5">
-                <h4>
+                <h4 className="mt-5">
                   דירה 35 מ"ר בבעלות פרטית בטאבו בבית מלון החל{' '}
                   <strong style={{ color: 'gold' }}>מ₪40.000</strong> והדירה שלך
                 </h4>
-                <h5
-                  style={{ color: 'red', fontWeight: '700', marginTop: '4rem' }}
-                >
-                  אירופה מתחממת
-                </h5>
-                <p className="mb-5" style={{ color: 'silver' }}>
-                  --מלאי הדירות בבתי מלון מוגבל ולכן מומלץ להזדרז--
-                </p>
               </div>
             </div>
             <div
-              style={{ backgroundColor: '#bbc11e4a' }}
+              style={{ backgroundColor: '#bbc11e4a', padding: '0' }}
               className="col-xl-6 col-sm-12 jumbotron"
             >
               <form>
-                <h4>השאירו פרטים</h4>
+                <h4 className="mt-3">השאירו פרטים</h4>
                 <h5>ונחזור אליכם בהקדם</h5>
                 <div className="form-group">
                   <label for="exampleInputEmail1">שם מלא</label>
                   <input
-                    style={{ color: 'white' }}
+                    style={{ color: 'white', width: '80%', margin: '0 auto' }}
                     type="text"
                     className="form-control"
                     id="exampleInputEmail1"
@@ -174,7 +185,7 @@ class Template extends React.Component {
                 <div className="form-group">
                   <label for="exampleInputPassword1">מספר טלפון</label>
                   <input
-                    style={{ color: 'white' }}
+                    style={{ color: 'white', width: '80%', margin: '0 auto' }}
                     type="text"
                     className="form-control"
                     id="exampleInputPassword1"
@@ -184,7 +195,7 @@ class Template extends React.Component {
                   אנו לא נשתף מידע זה עם אף אחד אחר
                 </small>
                 <button
-                  style={{ width: '100%' }}
+                  style={{ width: '80%' }}
                   type="submit"
                   className="btn btn-success mt-2"
                 >
@@ -237,7 +248,7 @@ class Template extends React.Component {
               <img
                 style={{ width: '45px', margin: '0 auto' }}
                 className="card-img-top"
-                src={icon1}
+                src={icon3}
                 alt="Card image cap"
               />
               <div className="card-body">
@@ -262,78 +273,11 @@ class Template extends React.Component {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h4 style={{ color: 'black' }} className="card-text">
+                  תנאי תשלום נוחים
+                </h4>
               </div>
             </div>{' '}
-            <div
-              className="card col-lg-4 col-md-6 py-5  mt-3"
-              style={{
-                background: 'rgba(19, 19, 18, 0)',
-                width: '18rem',
-                margin: '0 auto',
-                border: 'none',
-              }}
-            >
-              <img
-                style={{ width: '45px', margin: '0 auto' }}
-                className="card-img-top"
-                src={icon1}
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>{' '}
-            <div
-              className="card col-lg-4 col-md-6 py-5  mt-3"
-              style={{
-                background: 'rgba(19, 19, 18, 0)',
-                width: '18rem',
-                margin: '0 auto',
-                border: 'none',
-              }}
-            >
-              <img
-                style={{ width: '45px', margin: '0 auto' }}
-                className="card-img-top"
-                src={icon1}
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>{' '}
-            <div
-              className="card col-lg-4 col-md-6 py-5  mt-3"
-              style={{
-                background: 'rgba(19, 19, 18, 0)',
-                width: '18rem',
-                margin: '0 auto',
-                border: 'none',
-              }}
-            >
-              <img
-                style={{ width: '45px', margin: '0 auto' }}
-                className="card-img-top"
-                src={icon1}
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
