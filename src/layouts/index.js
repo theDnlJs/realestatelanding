@@ -132,11 +132,11 @@ class Template extends React.Component {
                 עדיין חולמים על בית מול הים?
                 <img
                   style={{
-                    width: '150px',
-                    position: 'sticky',
+                    width: '700',
+                    position: 'absolute',
                     opacity: '19%',
-                    top: '30px',
-                    left: '5vh',
+                    top: '5px',
+                    left: '3vh',
                   }}
                   src={baby}
                   alt="baby"
