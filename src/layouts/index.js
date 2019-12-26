@@ -110,7 +110,7 @@ class Template extends React.Component {
             textAlign: 'center',
             background: 'black',
           }}
-          className="container-fluid  p-5"
+          className="container-fluid  px-5 py-2"
         >
           <h1 style={{ color: 'gold', fontWeight: '700' }}>
             <img style={{ width: '4rem' }} src={lion} alt="lion" />
@@ -122,14 +122,14 @@ class Template extends React.Component {
           </h1>
 
           <div
-            className="my-1"
+            className=""
             style={{ background: 'gold', height: '5px', width: '100%' }}
           ></div>
 
-          <div className="row mt-5">
+          <div className="row mt-2">
             <div className="col-xl-6 col-sm-12">
-              <h1 className="mb-5" style={{ color: 'gold' }}>
-                עדיין חולמים על בית מול הים?
+              <h1 className="mb-2" style={{ color: 'gold' }}>
+                עדיין חולמים <br /> על בית מול הים?
                 <img
                   style={{
                     width: '700',
@@ -142,14 +142,23 @@ class Template extends React.Component {
                   alt="baby"
                 />
               </h1>
-              <Flash>
-                <h3 style={{ fontSize: '4rem' }}>תתעוררו</h3>
-              </Flash>
+
+              <h3
+                style={{
+                  fontSize: '3rem',
+                  animation: 'opacityPulse 2s ease-out',
+                  animationIterationCount: 'infinite',
+                  opacity: 1,
+                }}
+              >
+                תתעוררו
+              </h3>
+
               <h5
                 style={{
                   color: 'red',
                   fontWeight: '700',
-                  marginTop: '4rem',
+                  marginTop: '1rem',
                   fontSize: '2rem',
                 }}
               >
@@ -158,7 +167,7 @@ class Template extends React.Component {
               <p className="mb-5" style={{ color: 'silver' }}>
                 --מלאי הדירות בבתי מלון מוגבל ולכן מומלץ להזדרז--
               </p>
-              <div className="col-xl-12 col-md-12 mt-5">
+              <div className="col-xl-12 col-md-12 mt-2">
                 <h4 className="mt-5">
                   דירה 35 מ"ר בבעלות פרטית בטאבו בבית מלון החל{' '}
                   <strong style={{ color: 'gold' }}>מ₪40.000</strong> והדירה שלך
@@ -206,7 +215,7 @@ class Template extends React.Component {
           </div>
         </div>
         <div
-          className="container-fluid d-flex justify-content-center p-5"
+          className="container-fluid d-flex justify-content-center p-2"
           style={{
             margin: '0 auto',
             background: 'gold',
